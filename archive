@@ -1,0 +1,188 @@
+const stageColors = {
+    "Democracy": "#69c0ff",
+    "Elected Nationalist": "#fa8c16",
+    "Authoritarian": "#fadb14",
+    "Dictatorship": "#ff4d4f",
+    "Unknown": "#d9d9d9"
+  };
+  
+  const likertColors = {
+    "Democratic": "#919191",
+    "Low": "#85e630",
+    "Medium": "#e6dc30",
+    "High": "#ed2e2b",
+    "Very High": "#8a0a08"
+  };
+  
+  function lightenColor(hex, amt) {
+    const clamp = v => Math.min(255, Math.max(0, v));
+    const num = parseInt(hex.slice(1), 16);
+    let r = clamp((num >> 16) + amt);
+    let g = clamp(((num >> 8) & 0x00FF) + amt);
+    let b = clamp((num & 0x0000FF) + amt);
+    return `rgb(${r},${g},${b})`;
+  }
+  
+  async function loadCountryData() {
+    const response = await fetch('assets/content/countries.csv');
+    const csvText = await response.text();
+    const lines = csvText.trim().split('\n');
+    const [header, ...rows] = lines;
+  
+    const data = {};
+    rows.forEach(line => {
+      const [id, country, stage, popularity, volatility, position] = line.split(',');
+      data[id.trim()] = {
+        country,
+        stage,
+        popularity,
+        volatility,
+        position
+      };
+    });
+    return data;
+  }
+  
+  const objectEl = document.getElementById("svgMap");
+  const infoBox = document.getElementById("infoBox");
+  const infoContent = document.getElementById("infoContent");
+  const toggleBtn = document.getElementById("toggleButton");
+  const strictCheckbox = document.getElementById("strictMode");
+  const statusTrack = document.getElementById("statusTrack");
+  
+  let scrollTimer = null;
+  
+  toggleBtn.addEventListener("click", () => {
+    infoBox.classList.toggle("expanded");
+    toggleBtn.classList.toggle("expanded");
+  });
+  
+  objectEl.addEventListener("load", async () => {
+    const countryData = await loadCountryData();
+    const svgDoc = objectEl.contentDocument;
+    const svgEl = svgDoc.querySelector("svg");
+    const countries = svgDoc.querySelectorAll("path");
+  
+    countries.forEach(country => {
+      const id = country.getAttribute("id");
+      const data = countryData[id] || {
+        country: id,
+        stage: "Unknown",
+        popularity: "N/A",
+        volatility: "N/A",
+        position: "N/A"
+      };
+      const baseColor = stageColors[data.stage] || stageColors["Unknown"];
+      country.style.fill = baseColor;
+      country.style.cursor = "pointer";
+  
+      country.addEventListener("mouseover", (e) => {
+        country.style.fill = lightenColor(baseColor, 30);
+      });
+  
+      country.addEventListener("mouseout", () => {
+        country.style.fill = baseColor;
+      });
+  
+      country.addEventListener("click", () => {
+        fetch(`assets/text/${id}.txt`)
+          .then(r => r.ok ? r.text() : Promise.reject("not found"))
+          .then(text => {
+            infoContent.innerHTML = `
+              <strong>${data.country}</strong><br>
+              <em>Stage:</em> ${data.stage}<br>
+              <em>Popularity:</em> <span style="color:${likertColors[data.popularity] || '#000'}">${data.popularity}</span><br>
+              <em>Volatility:</em> <span style="color:${likertColors[data.volatility] || '#000'}">${data.volatility}</span><br>
+              <em>Position:</em> ${data.position}<br><br>
+              <div>${text}</div>
+            `;
+            infoBox.style.borderColor = baseColor;
+            toggleBtn.style.borderColor = baseColor;
+            toggleBtn.style.backgroundColor = "#f9f9f9";
+          })
+          .catch(() => {
+            infoContent.innerHTML = `
+              <strong>${data.country}</strong><br>
+              <em>Stage:</em> ${data.stage}<br>
+              <em>Popularity:</em> <span style="color:${likertColors[data.popularity] || '#000'}">${data.popularity}</span><br>
+              <em>Volatility:</em> <span style="color:${likertColors[data.volatility] || '#000'}">${data.volatility}</span><br>
+              <em>Position:</em> ${data.position}<br><br>
+              No detailed info available.
+            `;
+            infoBox.style.borderColor = baseColor;
+            toggleBtn.style.borderColor = baseColor;
+            toggleBtn.style.backgroundColor = "#f9f9f9";
+          });
+      });
+    });
+  
+    function calculateStagePercentages(data, strictOnly) {
+      const counts = {};
+      const order = Object.keys(stageColors);
+      let total = 0;
+  
+      order.forEach(stage => counts[stage] = 0);
+  
+      Object.values(data).forEach(({ stage }) => {
+        if (!stageColors[stage]) return;
+  
+        order.forEach((s, i) => {
+          if (stage === s || (!strictOnly && order.indexOf(stage) > i)) {
+            counts[s]++;
+          }
+        });
+        total++;
+      });
+  
+      return order.map(stage => ({
+        stage,
+        percent: total ? ((counts[stage] / total) * 100).toFixed(1) : 0
+      }));
+    }
+  
+    function updateStageStatusLines(data) {
+      clearTimeout(scrollTimer);
+  
+      const strictOnly = strictCheckbox.checked;
+      const stats = calculateStagePercentages(data, strictOnly);
+      const lines = stats.map(({ stage, percent }) => {
+        const color = stageColors[stage] || "#000";
+        return `<div class="statusLine"><span style="color:#000">The world is </span><span style="color:${color}">${percent}% ${stage}</span></div>`;
+      });
+  
+      const allLines = [...lines, ...lines]; // loopable
+      statusTrack.innerHTML = allLines.join('');
+      let index = 0;
+  
+      const step = () => {
+        index++;
+        if (index >= lines.length * 2) index = 0;
+  
+        statusTrack.style.transition = "transform 0.6s ease-in-out";
+        statusTrack.style.transform = `translateY(-${index * 30}px)`;
+  
+        if (index === lines.length) {
+          setTimeout(() => {
+            statusTrack.style.transition = "none";
+            statusTrack.style.transform = "translateY(0px)";
+            index = 0;
+          }, 700);
+        }
+  
+        scrollTimer = setTimeout(step, 2000);
+      };
+  
+      scrollTimer = setTimeout(step, 2000);
+    }
+  
+    strictCheckbox.addEventListener("change", () => updateStageStatusLines(countryData));
+    updateStageStatusLines(countryData);
+  
+    svgPanZoom(svgEl, {
+      zoomEnabled: true,
+      controlIconsEnabled: true,
+      fit: true,
+      center: true
+    });
+  });
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nationalism World Map</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="topBar">
+    <div id="lastUpdated">Last Updated: May 2025</div>
+    <div id="statusScroller">
+      <div id="statusTrack"></div>
+    </div>
+    <div id="scrollControls">
+      <label id="strictToggle">
+        <input type="checkbox" id="strictMode" />
+        Exact Stage
+        <span class="hintWrapper">
+          <img src="assets/content/hint.svg" alt="hint" style="width: 16px; vertical-align: middle; cursor: help;" />
+          <div class="hintBubble">Filter out harsher regimes to focus on just specific stages.</div>
+        </span>
+      </label>
+    
+      <label id="bordersToggle" style="margin-left: 12px;">
+        <input type="checkbox" id="showBorders" />
+        
+        <span class="hintWrapper">
+          <img src="assets/content/hint.svg" alt="hint" style="width: 16px; vertical-align: middle; cursor: help;" />
+          <div class="hintBubble">Adds black outlines to all countries for better visibility.</div>
+        </span>
+      </label>
+    </div>
+    
+  </div>
+
+  <div id="map-container">
+    <object id="svgMap" type="image/svg+xml" data="assets/content/world.svg"></object>
+
+    <div id="infoWrapper">
+      <div id="infoBox">
+        <div id="infoContent">Click a country to see more information.</div>
+      </div>
+      <div id="toggleButton"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+id,country,stage,popularity,volatility,position
+AD,Andorra,Unknown,Low,Low,Center
+AE,United Arab Emirates,Unknown,Low,Low,Center
+AF,Afghanistan,Unknown,Low,Low,Center
+AG,Antigua and Barbuda,Unknown,Low,Low,Center
+AI,Anguilla,Unknown,Low,Low,Center
+AL,Albania,Unknown,Low,Low,Center
+AM,Armenia,Unknown,Low,Low,Center
+AO,Angola,Unknown,Low,Low,Center
+AR,Argentina,Unknown,Low,Low,Center
+AS,American Samoa,Unknown,Low,Low,Center
+AT,Austria,Unknown,Low,Low,Center
+AU,Australia,Unknown,Low,Low,Center
+AW,Aruba,Unknown,Low,Low,Center
+AX,Aland Islands,Unknown,Low,Low,Center
+AZ,Azerbaijan,Unknown,Low,Low,Center
+BA,Bosnia and Herzegovina,Unknown,Low,Low,Center
+BB,Barbados,Unknown,Low,Low,Center
+BD,Bangladesh,Unknown,Low,Low,Center
+BE,Belgium,Unknown,Low,Low,Center
+BF,Burkina Faso,Unknown,Low,Low,Center
+BG,Bulgaria,Unknown,Low,Low,Center
+BH,Bahrain,Unknown,Low,Low,Center
+BI,Burundi,Unknown,Low,Low,Center
+BJ,Benin,Unknown,Low,Low,Center
+BL,Saint Barthelemy,Unknown,Low,Low,Center
+BN,Brunei Darussalam,Unknown,Low,Low,Center
+BO,Bolivia,Unknown,Low,Low,Center
+BM,Bermuda,Unknown,Low,Low,Center
+BQ,"Bonaire,  Saint Eustachius and Saba",Unknown,Low,Low,Center
+BR,Brazil,Unknown,Low,Low,Center
+BS,Bahamas,Unknown,Low,Low,Center
+BT,Bhutan,Unknown,Low,Low,Center
+BV,Bouvet Island,Unknown,Low,Low,Center
+BW,Botswana,Unknown,Low,Low,Center
+BY,Belarus,Unknown,Low,Low,Center
+BZ,Belize,Unknown,Low,Low,Center
+CA,Canada,Unknown,Low,Low,Center
+CC,Cocos  (Keeling)  Islands,Unknown,Low,Low,Center
+CD,Democratic Republic of Congo,Unknown,Low,Low,Center
+CF,Central African Republic,Unknown,Low,Low,Center
+CG,Republic of Congo,Unknown,Low,Low,Center
+CH,Switzerland,Unknown,Low,Low,Center
+CI,Côte d'Ivoire,Unknown,Low,Low,Center
+CK,Cook Islands,Unknown,Low,Low,Center
+CL,Chile,Unknown,Low,Low,Center
+CM,Cameroon,Unknown,Low,Low,Center
+CN,China,Unknown,Low,Low,Center
+CO,Colombia,Unknown,Low,Low,Center
+CR,Costa Rica,Unknown,Low,Low,Center
+CU,Cuba,Unknown,Low,Low,Center
+CV,Cape Verde,Unknown,Low,Low,Center
+CW,Curaçao,Unknown,Low,Low,Center
+CX,Christmas Island,Unknown,Low,Low,Center
+CY,Cyprus,Unknown,Low,Low,Center
+CZ,Czech Republic,Unknown,Low,Low,Center
+DE,Germany,Unknown,Low,Low,Center
+DJ,Djibouti,Unknown,Low,Low,Center
+DK,Denmark,Unknown,Low,Low,Center
+DM,Dominica,Unknown,Low,Low,Center
+DO,Dominican Republic,Unknown,Low,Low,Center
+DZ,Algeria,Unknown,Low,Low,Center
+EC,Ecuador,Unknown,Low,Low,Center
+EG,Egypt,Unknown,Low,Low,Center
+EE,Estonia,Unknown,Low,Low,Center
+EH,Western Sahara,Unknown,Low,Low,Center
+ER,Eritrea,Unknown,Low,Low,Center
+ES,Spain,Unknown,Low,Low,Center
+ET,Ethiopia,Unknown,Low,Low,Center
+FI,Finland,Unknown,Low,Low,Center
+FJ,Fiji,Unknown,Low,Low,Center
+FK,Falkland Islands,Unknown,Low,Low,Center
+FM,Federated States of Micronesia,Unknown,Low,Low,Center
+FO,Faroe Islands,Unknown,Low,Low,Center
+FR,France,Unknown,Low,Low,Center
+GA,Gabon,Unknown,Low,Low,Center
+GB,United Kingdom,Unknown,Low,Low,Center
+GE,Georgia,Unknown,Low,Low,Center
+GD,Grenada,Unknown,Low,Low,Center
+GF,French Guiana,Unknown,Low,Low,Center
+GG,Guernsey,Unknown,Low,Low,Center
+GH,Ghana,Unknown,Low,Low,Center
+GI,Gibraltar,Unknown,Low,Low,Center
+GL,Greenland,Unknown,Low,Low,Center
+GM,Gambia,Unknown,Low,Low,Center
+GN,Guinea,Unknown,Low,Low,Center
+GO,Glorioso Islands,Unknown,Low,Low,Center
+GP,Guadeloupe,Unknown,Low,Low,Center
+GQ,Equatorial Guinea,Unknown,Low,Low,Center
+GR,Greece,Unknown,Low,Low,Center
+GS,South Georgia and South Sandwich Islands,Unknown,Low,Low,Center
+GT,Guatemala,Unknown,Low,Low,Center
+GU,Guam,Unknown,Low,Low,Center
+GW,Guinea-Bissau,Unknown,Low,Low,Center
+GY,Guyana,Unknown,Low,Low,Center
+HK,Hong Kong,Unknown,Low,Low,Center
+HM,Heard Island and McDonald Islands,Unknown,Low,Low,Center
+HN,Honduras,Unknown,Low,Low,Center
+HR,Croatia,Unknown,Low,Low,Center
+HT,Haiti,Unknown,Low,Low,Center
+HU,Hungary,Unknown,Low,Low,Center
+ID,Indonesia,Unknown,Low,Low,Center
+IE,Ireland,Unknown,Low,Low,Center
+IL,Israel,Unknown,Low,Low,Center
+IM,Isle of Man,Unknown,Low,Low,Center
+IN,India,Unknown,Low,Low,Center
+IO,British Indian Ocean Territory,Unknown,Low,Low,Center
+IQ,Iraq,Unknown,Low,Low,Center
+IR,Iran,Unknown,Low,Low,Center
+IS,Iceland,Unknown,Low,Low,Center
+IT,Italy,Unknown,Low,Low,Center
+JE,Jersey,Unknown,Low,Low,Center
+JM,Jamaica,Unknown,Low,Low,Center
+JO,Jordan,Unknown,Low,Low,Center
+JP,Japan,Unknown,Low,Low,Center
+JU,Juan De Nova Island,Unknown,Low,Low,Center
+KE,Kenya,Unknown,Low,Low,Center
+KG,Kyrgyzstan,Unknown,Low,Low,Center
+KH,Cambodia,Unknown,Low,Low,Center
+KI,Kiribati,Unknown,Low,Low,Center
+KM,Comoros,Unknown,Low,Low,Center
+KN,Saint Kitts and Nevis,Unknown,Low,Low,Center
+KP,North Korea,Unknown,Low,Low,Center
+KR,South Korea,Unknown,Low,Low,Center
+XK,Kosovo,Unknown,Low,Low,Center
+KW,Kuwait,Unknown,Low,Low,Center
+KY,Cayman Islands,Unknown,Low,Low,Center
+KZ,Kazakhstan,Unknown,Low,Low,Center
+LA,Lao People's Democratic Republic,Unknown,Low,Low,Center
+LB,Lebanon,Unknown,Low,Low,Center
+LC,Saint Lucia,Unknown,Low,Low,Center
+LI,Liechtenstein,Unknown,Low,Low,Center
+LK,Sri Lanka,Unknown,Low,Low,Center
+LR,Liberia,Unknown,Low,Low,Center
+LS,Lesotho,Unknown,Low,Low,Center
+LT,Lithuania,Unknown,Low,Low,Center
+LU,Luxembourg,Unknown,Low,Low,Center
+LV,Latvia,Unknown,Low,Low,Center
+LY,Libya,Unknown,Low,Low,Center
+MA,Morocco,Unknown,Low,Low,Center
+MC,Monaco,Unknown,Low,Low,Center
+MD,Moldova,Unknown,Low,Low,Center
+MG,Madagascar,Unknown,Low,Low,Center
+ME,Montenegro,Unknown,Low,Low,Center
+MF,Saint Martin,Unknown,Low,Low,Center
+MH,Marshall Islands,Unknown,Low,Low,Center
+MK,Macedonia,Unknown,Low,Low,Center
+ML,Mali,Unknown,Low,Low,Center
+MO,Macau,Unknown,Low,Low,Center
+MM,Myanmar,Unknown,Low,Low,Center
+MN,Mongolia,Unknown,Low,Low,Center
+MP,Northern Mariana Islands,Unknown,Low,Low,Center
+MQ,Martinique,Unknown,Low,Low,Center
+MR,Mauritania,Unknown,Low,Low,Center
+MS,Montserrat,Unknown,Low,Low,Center
+MT,Malta,Unknown,Low,Low,Center
+MU,Mauritius,Unknown,Low,Low,Center
+MV,Maldives,Unknown,Low,Low,Center
+MW,Malawi,Unknown,Low,Low,Center
+MX,Mexico,Unknown,Low,Low,Center
+MY,Malaysia,Unknown,Low,Low,Center
+MZ,Mozambique,Unknown,Low,Low,Center
+NA,Namibia,Unknown,Low,Low,Center
+NC,New Caledonia,Unknown,Low,Low,Center
+NE,Niger,Unknown,Low,Low,Center
+NF,Norfolk Island,Unknown,Low,Low,Center
+NG,Nigeria,Unknown,Low,Low,Center
+NI,Nicaragua,Unknown,Low,Low,Center
+NL,Netherlands,Unknown,Low,Low,Center
+NO,Norway,Unknown,Low,Low,Center
+NP,Nepal,Unknown,Low,Low,Center
+NR,Nauru,Unknown,Low,Low,Center
+NU,Niue,Unknown,Low,Low,Center
+NZ,New Zealand,Unknown,Low,Low,Center
+OM,Oman,Unknown,Low,Low,Center
+PA,Panama,Unknown,Low,Low,Center
+PE,Peru,Unknown,Low,Low,Center
+PF,French Polynesia,Unknown,Low,Low,Center
+PG,Papua New Guinea,Unknown,Low,Low,Center
+PH,Philippines,Unknown,Low,Low,Center
+PK,Pakistan,Unknown,Low,Low,Center
+PL,Poland,Unknown,Low,Low,Center
+PM,Saint Pierre and Miquelon,Unknown,Low,Low,Center
+PN,Pitcairn Islands,Unknown,Low,Low,Center
+PR,Puerto Rico,Unknown,Low,Low,Center
+PS,Palestinian Territories,Unknown,Low,Low,Center
+PT,Portugal,Unknown,Low,Low,Center
+PW,Palau,Unknown,Low,Low,Center
+PY,Paraguay,Unknown,Low,Low,Center
+QA,Qatar,Unknown,Low,Low,Center
+RE,Reunion,Unknown,Low,Low,Center
+RO,Romania,Unknown,Low,Low,Center
+RS,Serbia,Unknown,Low,Low,Center
+RU,Russia,Unknown,Low,Low,Center
+RW,Rwanda,Unknown,Low,Low,Center
+SA,Saudi Arabia,Unknown,Low,Low,Center
+SB,Solomon Islands,Unknown,Low,Low,Center
+SC,Seychelles,Unknown,Low,Low,Center
+SD,Sudan,Unknown,Low,Low,Center
+SE,Sweden,Unknown,Low,Low,Center
+SG,Singapore,Unknown,Low,Low,Center
+SH,Saint Helena,Unknown,Low,Low,Center
+SI,Slovenia,Unknown,Low,Low,Center
+SJ,Svalbard and Jan Mayen,Unknown,Low,Low,Center
+SK,Slovakia,Unknown,Low,Low,Center
+SL,Sierra Leone,Unknown,Low,Low,Center
+SM,San Marino,Unknown,Low,Low,Center
+SN,Senegal,Unknown,Low,Low,Center
+SO,Somalia,Unknown,Low,Low,Center
+SR,Suriname,Unknown,Low,Low,Center
+SS,South Sudan,Unknown,Low,Low,Center
+ST,Sao Tome and Principe,Unknown,Low,Low,Center
+SV,El Salvador,Unknown,Low,Low,Center
+SX,Saint Martin,Unknown,Low,Low,Center
+SY,Syria,Unknown,Low,Low,Center
+SZ,Swaziland,Unknown,Low,Low,Center
+TC,Turks and Caicos Islands,Unknown,Low,Low,Center
+TD,Chad,Unknown,Low,Low,Center
+TF,French Southern and Antarctic Lands,Unknown,Low,Low,Center
+TG,Togo,Unknown,Low,Low,Center
+TH,Thailand,Unknown,Low,Low,Center
+TJ,Tajikistan,Unknown,Low,Low,Center
+TK,Tokelau,Unknown,Low,Low,Center
+TL,Timor-Leste,Unknown,Low,Low,Center
+TM,Turkmenistan,Unknown,Low,Low,Center
+TN,Tunisia,Unknown,Low,Low,Center
+TO,Tonga,Unknown,Low,Low,Center
+TR,Turkey,Unknown,Low,Low,Center
+TT,Trinidad and Tobago,Unknown,Low,Low,Center
+TV,Tuvalu,Unknown,Low,Low,Center
+TW,Taiwan,Unknown,Low,Low,Center
+TZ,Tanzania,Unknown,Low,Low,Center
+UA,Ukraine,Unknown,Low,Low,Center
+UG,Uganda,Unknown,Low,Low,Center
+UM-DQ,Jarvis Island,Unknown,Low,Low,Center
+UM-FQ,Baker Island,Unknown,Low,Low,Center
+UM-HQ,Howland Island,Unknown,Low,Low,Center
+UM-JQ,Johnston Atoll,Unknown,Low,Low,Center
+UM-MQ,Midway Islands,Unknown,Low,Low,Center
+UM-WQ,Wake Island,Unknown,Low,Low,Center
+US,United States,Unknown,Low,Low,Center
+UY,Uruguay,Unknown,Low,Low,Center
+UZ,Uzbekistan,Unknown,Low,Low,Center
+VA,Vatican City,Unknown,Low,Low,Center
+VC,Saint Vincent and the Grenadines,Unknown,Low,Low,Center
+VE,Venezuela,Unknown,Low,Low,Center
+VG,British Virgin Islands,Unknown,Low,Low,Center
+VI,US Virgin Islands,Unknown,Low,Low,Center
+VN,Vietnam,Unknown,Low,Low,Center
+VU,Vanuatu,Unknown,Low,Low,Center
+WF,Wallis and Futuna,Unknown,Low,Low,Center
+WS,Samoa,Unknown,Low,Low,Center
+YE,Yemen,Unknown,Low,Low,Center
+YT,Mayotte,Unknown,Low,Low,Center
+ZA,South Africa,Democracy,Low,Low,Center
+ZM,Zambia,Unknown,Low,Low,Center
+ZW,Zimbabwe,Unknown,Low,Low,Center
